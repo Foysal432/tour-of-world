@@ -43,7 +43,7 @@ const Countries = () => {
                     visitedflag.map((flag,idx)=> <img key={idx } src={flag}></img>)
                 }
             </div>
-            <div className="countries-container">
+            <div className="countries-container grid grid-cols-1 lg:grid-cols-3">
             {
                 countries.map(country=><Country key={countries.cca3} 
                      country={country} handleVisited={handleVisited} visitedflag={handleflag}>
